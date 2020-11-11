@@ -1,4 +1,4 @@
-listname = ["Zayn Malik", "Louis Tomlinson", "Niall Horan","Liam Payne"]
+listname = ["Zayn Malik", "Niall Horan", "Louis Tomlinson"]
 #print (listname)
     #for variable in listname:
     #print (variable)
@@ -6,71 +6,91 @@ print (listname[1])
 print (listname[-1])
 print (listname[::-1])
 
-helloworld = "hello" + "" + "world"
-print(helloworld)
-
 #reverse
 print (listname[::-1])
 listname.reverse()
+print(listname)
 
-#python3
-print(f"hello(mystring)")
+#number
+number = 1 + 2 + 3 / 4.0
+print(number)
 
-astring = "helloworld!"
-print ("single quotes are ' ")
-print(len(astring))
+#modulus
+mod = 10 % 3
+print (mod)
 
-astring = "hello world!"
-print(astring.index("0"))
+#perpangkatan
+squared = 7 ** 2
+cubed = 2 ** 3
+print (squared)
+print (cubed)
 
-astring = "hello world!"
-print(astring.count("1"))
-print(astring[3:7])
+#concade
+#tambah string + string
+helloworld = "hello" + "" + "world"
+print (helloworld)
 
-#[start:stop:step]
+#using operators with list
+even_numbers = [2,4,6,8]
+odd_numbers = [1,3,5,7]
+all_numbers = odd_numbers + even_numbers
+print (all_numbers)
+
+#basic string operations
 astring = "Hello World!"
-print(astring[3:7:2])
+print ("single quotes are '(what's this??)' ")
+print (len(astring))
+string = "john doe"
+print (len(string))
 
-astring = "Hello world!"
-print(astring[::-1])
-print(astring.upper())
-print(astring.lower())
+#string formatting
+myString = "Luke Skywalker"
+myInt = 12
+myFloat = 1.8
 
-astring = "Hello World!"
-print(astring.startswith("Hello"))
-print(astring.endswith("asdfasdfasdf"))
+#reference use index
+print ("The string is {0} nad the integer is {1}". format (myString, myInt))
+lst = {'name': 'Obi-Wan Kenobi', 'role': 'Jedi Master'}
+print ("Welcome {name}, {role}". format (name = lst['name'], role=lst['role']))
+print ("Welcom {name}, {role}". format (**lst))
+  
+#get use index:
+astring = "Hello Me!"
+print (astring.index("o"))
+print (astring.count("1"))
+print (astring [3:7])
 
 #split
-astring = "Hello World!"
-afewwords = astring.split("")
+afewwords = astring.split(" ")
+print(afewwords)
 
-Conditions
-x = 2
-print(x == 2)
-
-Boolean operators
+#Boolean OPerators
 name = "John"
 age = 23
-if name == "John" and age ==23:
+if name == "John" and age == 23:
     print("Your name is John, and you are also 23 years old.")
 if name == "John" or name == "Rick":
     print("Your name is either John or Rick.")
 
-The "in" operator:
-name = "Luke"
-if name in ["Luke","Han"]:
-    print("Your name is either Luke.")
-
+          
 #if and else
-statement = False
-another_statement = True
-if Dia jelek is True:
-    #do something
+diajelek = False
+diacakep = True
+if diacakep is True:
+    # do something
+    print("alhamdulillah")
     pass
-elif another_statement is True:#else if
+elif diajelek is True: #else if
     #do something else
+    print("do skincare")
     pass
 else:
-    #do another thing 
+    #do another thing
+    print("apanih")
     pass
+
+
+
+
+
 
